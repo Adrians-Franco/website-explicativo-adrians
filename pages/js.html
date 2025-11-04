@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - JavaScript</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script defer>
+        function mostrarMensagem() {
+            alert("Olá! Você clicou no botão e o JavaScript respondeu 😄");
+        }
+
+        // NOVA FUNÇÃO PARA DEMONSTRAR VARIÁVEIS
+        function exibirVariaveis() {
+            let nome = "Dev Júnior";
+            const ano = 2025;
+            document.getElementById('resultado-var').innerText =
+                `Olá, ${nome}! Estamos no ano de ${ano}. Variáveis funcionam!`;
+        }
+        // FIM DA NOVA FUNÇÃO
+    </script>
+</head>
+
+<body onload="exibirVariaveis()">
+    <header>
+        <h1>JavaScript — Tornando páginas interativas</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="react.html">React</a>
+        <a href="node.html">Node.js</a>
+    </nav>
+
+    <main>
+        <p>O JavaScript adiciona comportamento ao site, como cliques e animações.</p>
+
+        <h2>Exemplo 1: Eventos e Funções</h2>
+        <p>Ao clicar no botão, uma função JavaScript (<code>mostrarMensagem</code>) é executada.</p>
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+
+        <hr>
+
+        <h2>Exemplo 2: Variáveis (Armazenando Dados)</h2>
+        <p>Variáveis são usadas para guardar informações. Usamos <code>let</code> e <code>const</code> para declará-las.
+        </p>
+
+        <h3>Código JavaScript:</h3>
+        <pre>
+let nome = "Dev Júnior";
+const ano = 2025;
+
+// Combinando e exibindo os dados na tela
+document.getElementById('resultado-var').innerText = 
+  `Olá, ${nome}! Estamos no ano de ${ano}. Variáveis funcionam!`;
+        </pre>
+
+        <h3>Resultado:</h3>
+        <div id="resultado-var" class="exemplo-js">
+        </div>
+        <p>*(O texto acima foi preenchido automaticamente ao carregar a página)*</p>
+
+    </main>
+</body>
+
+</html>
